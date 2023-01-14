@@ -10,8 +10,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link className="font-bold" to="/dashboard">
-          Dashboard
+        <Link className="font-bold" to="/manageproducts">
+          ManageProducts
         </Link>
       </li>
       <li>
@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full bg-primary text-white">
-      <div className=" container mx-auto navbar bg-primary">
+      <div className=" max-w-[1440px] mx-auto navbar bg-primary">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
