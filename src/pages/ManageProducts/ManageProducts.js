@@ -1,6 +1,7 @@
 import React from "react";
 import { toast } from "react-hot-toast";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 
 const ManageProducts = () => {
   const {
@@ -69,7 +70,9 @@ const ManageProducts = () => {
                   </button>
                 </td>
                 <td>
-                  <button className="btn btn-success">Update Product</button>
+                  <Link to={`/updateProduct/${product._id}`}>
+                    <button className="btn btn-success">Update Product</button>
+                  </Link>
                 </td>
               </tr>
             ))}
