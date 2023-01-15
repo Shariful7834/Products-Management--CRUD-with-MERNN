@@ -37,7 +37,7 @@ const ManageProducts = () => {
     }
   };
   return (
-    <div className="w-[1440px] mx-auto">
+    <div className="container mx-auto">
       <h1 className="text-2xl font-bold text-center mt-16 mb-6">
         Manage Products
       </h1>
@@ -48,8 +48,8 @@ const ManageProducts = () => {
             <tr>
               <th></th>
               <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
+              <th>Price</th>
+              <th>Quantity</th>
               <th>Action</th>
               <th>Update</th>
             </tr>
@@ -59,7 +59,7 @@ const ManageProducts = () => {
               <tr key={product._id}>
                 <th>{i + 1}</th>
                 <td>{product.productName}</td>
-                <td>{product.productPrice}</td>
+                <td>{product.ProductPrice}</td>
                 <td>{product.quantity}</td>
                 <td>
                   <button

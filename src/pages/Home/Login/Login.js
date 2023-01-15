@@ -10,32 +10,32 @@ const Login = () => {
   return (
     <div className="w-96 mx-auto">
       <form className="p-5" onSubmit={handleSubmit(handleAddProduct)}>
-        <h1 className="text-3xl">ADD PRODUCTS</h1>
+        <h1 className="text-3xl">RESISTER USER </h1>
         <div className="form-control w-full ">
           <label className="label">
-            <span className="label-text">Product Name</span>
+            <span className="label-text"> Name</span>
           </label>
           <input
             type="text"
-            {...register("productName")}
+            {...register("name")}
             className="input input-bordered w-full"
             required
           />
         </div>
         <div className="form-control w-full ">
           <label className="label">
-            <span className="label-text">Product Price</span>
+            <span className="label-text">Email</span>
           </label>
           <input
-            type="text"
-            {...register("productPrice")}
+            type="email"
+            {...register("email")}
             className="input input-bordered w-full"
             required
           />
         </div>
         <div className="form-control w-full ">
           <label className="label">
-            <span className="label-text">Quantity</span>
+            <span className="label-text">Password</span>
           </label>
           <input
             type="text"
@@ -48,7 +48,7 @@ const Login = () => {
         <div className="mt-5">
           <input
             type="submit"
-            value="Add Product"
+            value="Register User"
             className="btn btn-primary w-full "
           />
         </div>

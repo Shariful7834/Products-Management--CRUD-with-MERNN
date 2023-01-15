@@ -45,7 +45,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
               {menuItems}
             </ul>
@@ -58,7 +58,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Get started</a>
+          <Link to="/login">
+            <button className="btn btn-outline-success">Login</button>
+          </Link>
         </div>
       </div>
     </div>
