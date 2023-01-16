@@ -50,7 +50,7 @@ const ManageProducts = () => {
               <th>Name</th>
               <th>Price</th>
               <th>Quantity</th>
-              <th>Action</th>
+              <th>Delete</th>
               <th>Update</th>
             </tr>
           </thead>
