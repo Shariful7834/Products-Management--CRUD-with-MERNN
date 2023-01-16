@@ -52,6 +52,14 @@ const Login = () => {
             className="btn btn-primary w-full "
           />
         </div>
+        <div className="divider mt-5">OR</div>
+        <div className="mt-5">
+          <input
+            type="submit"
+            value="Google"
+            className="btn btn-outline btn-primary w-full"
+          />
+        </div>
       </form>
     </div>
   );
